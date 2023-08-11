@@ -1,0 +1,23 @@
+.main {
+    min-height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+.input-autocomplete {
+    width: 500px;
+    height: 32px;
+    font-size: 19px;
+    border-radius: 5px;
+    border: none;
+}
+.img-svg {
+    width: 15px;
+}
+.item-wrapper {
+    display: flex;
+}
+.item-text{
+    padding-left: 15px;
+}
