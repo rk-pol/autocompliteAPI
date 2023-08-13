@@ -12,7 +12,7 @@
 
 <section class="main">
     <div class="input-autocomplete-wrapper">
-        <input type="text" class="input-autocomplete" id="inputAutocomplete"placeholder="Type your text..." >
+        <input type="text" class="input-autocomplete" id="inputAutocomplete" placeholder="Type your text..." >
     </div>
 </section>
 
