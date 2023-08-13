@@ -1,10 +1,5 @@
 $(document).ready(function() {
 
-    $(".input-autocomplete").focus(function() {
-        $(this).css("border-color", "blue");
-    })
-
-
     $( function() {
         $( "#inputAutocomplete" ).autocomplete({
             source : function( request, response ) {
