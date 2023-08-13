@@ -4,10 +4,6 @@ require_once __DIR__ . '/autoload.php';
 use App\Service\RouteService;
 use App\Service\ResponseService;
 use App\Service\HttpStatusCodeService;
-use App\Service\ReflectionClassService;
-use App\Controller\PageController;
-use App\Controller\AutocompleteDataController;
-
 
 $route = new RouteService();
 
