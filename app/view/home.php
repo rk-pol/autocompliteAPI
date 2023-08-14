@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Autocomplete page</title>
     <link rel="stylesheet" href="./public/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/jqueryui@1.11.1/jquery-ui.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/jqueryui@1.11.4/jquery-ui.min.css" rel="stylesheet">
 </head>
 <body>
 
