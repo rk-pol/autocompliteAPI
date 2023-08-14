@@ -4,7 +4,7 @@ $(document).ready(function() {
         $( "#inputAutocomplete" ).autocomplete({
             source : function( request, response ) {
                 $.ajax({
-                    url: "/autocomplete",
+                    url: "autocomplete",
                     dataType: "json",
                     type: 'POST',
                     data: {
