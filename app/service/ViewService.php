@@ -10,7 +10,7 @@ class ViewService
 
     public function buffer($path)
     {
-        $pathToView = $_SERVER['DOCUMENT_ROOT'] . '/' . $path;
+        $pathToView = $_SERVER['DOCUMENT_ROOT'] . 'test/' . $path;
         if (file_exists($pathToView)) {
             ob_start();
             require_once $pathToView;

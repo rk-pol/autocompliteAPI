@@ -8,8 +8,8 @@ use App\Controller\AutocompleteDataController;
 
 $route = new RouteService();
 
-$route->addRoute('GET', '/', ['App\Controller\PageController', 'home']);
-$route->addRoute('POST', '/autocomplete', ['App\Controller\AutocompleteDataController', 'autocomplete']);
+$route->addRoute('GET', '/test/', ['App\Controller\PageController', 'home']);
+$route->addRoute('POST', '/test/autocomplete', ['App\Controller\AutocompleteDataController', 'autocomplete']);
 
 $httpMethod = $_SERVER['REQUEST_METHOD'];
 $uri = $_SERVER['REQUEST_URI'];
