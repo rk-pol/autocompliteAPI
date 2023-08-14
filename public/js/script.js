@@ -20,7 +20,6 @@ $(document).ready(function() {
                                 }
                             }))
                         }
-                        console.log('Data not found.')
                     }
                 });
             },
