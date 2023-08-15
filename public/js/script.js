@@ -47,4 +47,7 @@ $(document).ready(function() {
             return $("<li>").append(listItem).appendTo(ul);
         };
     });
+
+    document.querySelector("#inputAutocomplete").spellcheck = true;
+
 })

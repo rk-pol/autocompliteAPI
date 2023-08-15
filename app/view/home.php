@@ -19,7 +19,10 @@
 
 <!-- Include jQuery from a CDN -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><!-- Include JavaScript file -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Include JavaScript file -->
+<script type="text/javascript" src='./public/js/JavaScriptSpellCheck/include.js' ></script>
 <script src="./public/js/script.js"></script>
 </body>
 </html>
