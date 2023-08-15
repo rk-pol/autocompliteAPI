@@ -13,7 +13,7 @@
 
 <section class="main">
     <div class="input-autocomplete-wrapper">
-        <input type="text" class="input-autocomplete" id="inputAutocomplete" placeholder="Type your text..." >
+        <input type="text" class="input-autocomplete" spellcheck="false" id="inputAutocomplete" placeholder="Type your text..." >
     </div>
 </section>
 
@@ -22,7 +22,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 <!-- Include JavaScript file -->
-<script type="text/javascript" src='./public/js/JavaScriptSpellCheck/include.js' ></script>
+<!--<script type="text/javascript" src='./public/js/JavaScriptSpellCheck/include.js' ></script>-->
 <script src="./public/js/script.js"></script>
 </body>
 </html>

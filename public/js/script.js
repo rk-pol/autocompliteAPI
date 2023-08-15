@@ -3,6 +3,9 @@ $(document).ready(function() {
     $( function() {
         $( "#inputAutocomplete" ).autocomplete({
             source : function( request, response ) {
+
+                grammarCheck(request.term)
+
                 $.ajax({
                     url: "autocomplete",
                     dataType: "json",
@@ -48,6 +51,36 @@ $(document).ready(function() {
         };
     });
 
-    document.querySelector("#inputAutocomplete").spellcheck = true;
-
 })
+
+function grammarCheck (data) {
+    const settings = {
+        async: true,
+        crossDomain: true,
+        url: 'https://grammar-and-spellcheck.p.rapidapi.com/grammarandspellcheck',
+        method: 'POST',
+        headers: {
+            'content-type': 'application/x-www-form-urlencoded',
+            'X-RapidAPI-Key': 'cccb63f88amshc5eab682baf77a2p169991jsndff3788c0626',
+            'X-RapidAPI-Host': 'grammar-and-spellcheck.p.rapidapi.com'
+        },
+        data: {
+            query: data
+        }
+    };
+
+    $.ajax(settings).done(function (response) {
+
+        var spellcheckStatus = $('#inputAutocomplete').attr('spellcheck');
+
+        if (response['identified_mistakes'].length > 0) {
+            if (spellcheckStatus === 'false') {
+                $('#inputAutocomplete').attr('spellcheck', true);
+            }
+        } else {
+            if (spellcheckStatus === 'true') {
+                $('#inputAutocomplete').attr('spellcheck', false);
+            }
+        }
+    });
+}
