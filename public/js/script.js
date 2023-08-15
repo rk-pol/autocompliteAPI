@@ -26,16 +26,25 @@ $(document).ready(function() {
             autoFocus: true,
             delay: 530,
             minLength: 2,
+            focus: function( event, ui ) {
+                $('ui .item-text').css('colore', 'red')
+            }
+
         }).autocomplete("instance")._renderItem = function(ul, item) {
-            var item = $(`
-                          <div class="list_item_container">
-                            <div class="item-wrapper">
-                              <img class="img-svg" src="./public/image/svg/${item.type === 0 ? 'plane.svg' : (item.type === 1 ? 'location.svg' : 'seaport.svg')}">
-                              <div class="item-text">${item.label}</div>
+            var listItem = $(`
+                           <div class="list-line-wrapper">
+                               <div class="list-item-container">
+                                <div class="item-wrapper">
+                                  <img class="img-svg ${item.type === 0 ? 'plane-svg': (item.type === 1 ? 'location-svg' : '')}" src="./public/image/svg/${item.type === 0 ? 'plane.svg' : (item.type === 1 ? 'location.svg' : 'seaport.svg')}">
+                                  <div class="item-text">${item.label}</div>
+                                </div>                         
+                              </div>
+                              <div class="ui-menu-hline-wrapper"><hr class="ui-menu-hline"></div>
                             </div>
-                          </div>
+                          
+                          
             `);
-            return $("<li>").append(item).appendTo(ul);
+            return $("<li>").append(listItem).appendTo(ul);
         };
     });
 })
